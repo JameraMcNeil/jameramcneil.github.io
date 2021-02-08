@@ -4,13 +4,19 @@ h1 {
 
 body {
     background-color: #2B26C4;
+    text-align: center;
+}
+table, td, td {
+    border: 1px solid black;
 }
 
-.category {
+th, td {
+    padding: 10px;
+}
+
+#board {
     color: #DBA72D;
-}
-
-.film-column, .authors {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+   
 }
