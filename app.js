@@ -53,6 +53,8 @@ $(() => {
       $films100.css('color', 'black')
       const $div = $('<div>');
       $div.addClass('zoom')
+      $div.text('This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land.')
+      $div.css('text-align', 'center')
       $films100.append($div)
   }
 
