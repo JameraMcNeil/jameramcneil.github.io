@@ -51,6 +51,9 @@ $(() => {
   const turnPink = () => {
       $films100.css('background-color', '#FF91D2');
       $films100.css('color', 'black')
+      const $div = $('<div>');
+      $div.addClass('zoom')
+      $films100.append($div)
   }
 
   // Add event listeners to films category

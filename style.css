@@ -54,6 +54,18 @@ footer {
     text-align: center;
 }
 
+.zoom {
+    padding: 50px;
+    background-color: #FF91D2;
+    transition: transform .2s;
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
 
 #board {
     color: #DBA72D;
