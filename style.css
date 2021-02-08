@@ -9,3 +9,8 @@ body {
 .category {
     color: #DBA72D;
 }
+
+.film-column, .authors {
+    display: flex;
+    flex-direction: column;
+}
