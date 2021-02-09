@@ -64,9 +64,13 @@ footer {
 }
 
 .zoom:hover {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
+button {
+    background-color: white;
+    color: #0D4C34;
+}
 #board {
     color: #DBA72D;
     display: flex;
