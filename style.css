@@ -1,7 +1,14 @@
 h1 {
     color: #DBA72D;
 }
+p {
+    color: #DBA72D;
+    font-size: 20px;
+}
 
+.score {
+    
+}
 body {
     background-color: #2B26C4;
     text-align: center;

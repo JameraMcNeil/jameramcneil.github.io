@@ -66,6 +66,12 @@ $(() => {
   const $sayings400 = $('.sayings-400')
   const $sayings500 = $('.sayings-500')
 
+  const $score = $('.score')
+
+  const scoreCount = () => {
+      
+  }
+
   // Add event handlers to films category
 
   const filmContent100 = () => {
@@ -75,6 +81,7 @@ $(() => {
       $div.addClass('zoom')
       // Maybe I can utitlize backticks to help structure this paragraph because it's all blending together//
       $div.text('This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: ')
+      // added buttons for each each answer 
       const $inputAnswerA = $('<button>')
       $inputAnswerA.addClass('Mahogony')
       $inputAnswerA.html('<p>Mahogony </p>')
@@ -93,6 +100,8 @@ $(() => {
       $div.append($inputAnswerD)
 
       $films100.append($div)
+
+      
   }
 
   const filmContent200 =() => {
