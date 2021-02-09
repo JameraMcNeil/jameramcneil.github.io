@@ -55,16 +55,16 @@ footer {
 }
 
 .zoom {
-    padding: 50px;
+    padding: 20px;
     background-color: #FF91D2;
     transition: transform .2s;
-    width: 120px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
 }
 
 .zoom:hover {
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 #board {
