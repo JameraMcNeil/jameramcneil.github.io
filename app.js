@@ -75,26 +75,27 @@ $(() => {
   // Add event handlers to films category
 
   const filmContent100 = () => {
-      // $films100.css('background-color', '#FF91D2');
-      // $films100.css('color', 'black')
+    //To help with structuring I added a paragraph to the new div that will have the question displayed inside the section when it's grabbed
       const $div = $('<div>');
       $div.addClass('zoom')
+      $div.html('<p>This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: </p>')
       // Maybe I can utitlize backticks to help structure this paragraph because it's all blending together//
-      $div.text('This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: ')
+      // $div.text('This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: ')
       // created a button element for each answer 
-      //added a class to the button with the name of the answer
+      //added a class to the button which groups teogether all of the 
       // set an html element on the button of the answer itself so it's visible to user
       const $inputAnswerA = $('<button>')
-      $inputAnswerA.addClass('Mahogony')
+      $inputAnswerA.addClass('answer-button')
+      $inputAnswerA.attr('id','Mahogony')
       $inputAnswerA.html('<p>Mahogony </p>')
       const $inputAnswerB = $('<button>')
-      $inputAnswerB.addClass('Lady')
+      $inputAnswerB.addClass('answer-button')
       $inputAnswerB.html('<p>Lady Sings the Blues</p>')
       const $inputAnswerC = $('<button>')
-      $inputAnswerC.addClass('Wiz')
+      $inputAnswerC.addClass('answer-button')
       $inputAnswerC.html('<p>The Wiz</p>')
       const $inputAnswerD = $ ('<button>')
-      $inputAnswerD.addClass('Grease')
+      $inputAnswerD.addClass('answer-button')
       $inputAnswerD.html('<p>Grease</p>')
       $div.append($inputAnswerA)
       $div.append($inputAnswerB)
@@ -105,19 +106,26 @@ $(() => {
 
       let answer = true;
 
+
       // add click event for buttons to change color on correct answer
-      // $('button').on('click', (e) => {
-      //   if (answer === '<p>The Wiz</p>') {
-      //     $(e.currentTarget).css('background-color', 'green')
-      //   }
-      // })
+      // select element that will affected when clicked
+      $('.answer-button').on('click', (e) => {
+    // checking to see what element is selected when the event occurs
+        console.log($(e.currentTarget).text())
+        //create a conditional that takes clicked element and compares it to the 
+        if ( $(e.currentTarget).text() == 'The Wiz') {
+          alert('The Wiz is the correct answer! You\'ve earned $100!')
+          // change color of right answer
+          $inputAnswerC.css('border', '#0D4C34')
+        } else {
+          alert('Sorry, that\'s the wrong answer.')
+        }
+      })
 
       
   }
 
   const filmContent200 =() => {
-      $films200.css('background-color','#FF91D2');
-      $films200.css('color', 'black')
       const $div = $('<div>');
       $div.addClass('zoom')
       $div.text('This film was adapted from Terry McMillan\'s novel about for friends. What is: ')
@@ -721,7 +729,7 @@ $(() => {
 
   // Add event listeners to each category
   // Found that everytime I clicked the
-  $films100.on('click', (e) => {
+  $films100.on('click', () => {
     $films100.css('background-color', '#FF91D2');
     $films100.css('color', 'black')
     $films100.off('click')
@@ -731,34 +739,172 @@ $(() => {
   })
 
 
-  $films200.on('click', filmContent200)
-  $films300.on('click', filmContent300)
-  $films400.on('click', filmContent400)
-  $films500.on('click', filmContent500)
+  $films200.on('click', () => {
+  $films200.css('background-color', '#FF91D2');
+  $films200.css('color', 'black')
+  $films200.off('click')
+  filmContent200()
+})
 
-  $authors100.on('click', authorContent100)
-  $authors200.on('click', authorContent200)
-  $authors300.on('click', authorContent300)
-  $authors400.on('click', authorContent400)
-  $authors500.on('click', authorContent500)
+  $films300.on('click', () => {
+    $films300.css('background-color', '#FF91D2');
+    $films300.css('color', 'black')
+    $films300.off('click')
+    filmContent300()
+  })
+  $films400.on('click', () => {
+    $films400.css('background-color', '#FF91D2');
+    $films400.css('color', 'black')
+    $films400.off('click')
+    filmContent400()
+  })
 
-  $items100.on('click', itemContent100)
-  $items200.on('click', itemContent200)
-  $items300.on('click', itemContent300)
-  $items400.on('click', itemContent400)
-  $items500.on('click', itemContent500)
+  $films500.on('click', () => {
+    $films500.css('background-color', '#FF91D2');
+    $films500.css('color', 'black')
+    $films500.off('click')
+    filmContent500()
+  })
 
-  $music100.on('click', musicContent100)
-  $music200.on('click', musicContent200)
-  $music300.on('click', musicContent300)
-  $music400.on('click', musicContent400)
-  $music500.on('click', musicContent500)
+  $authors100.on('click', () => {
+    $authors100.css('background-color', '#FF91D2');
+    $authors100.css('color', 'black')
+    $authors100.off('click')
+    authorContent100()
+  })
+  $authors200.on('click', () => {
+    $authors200.css('background-color', '#FF91D2');
+    $authors200.css('color', 'black')
+    $authors200.off('click')
+    authorContent200()
+  })
 
-  $sayings100.on('click', sayingsContent100)
-  $sayings200.on('click', sayingsContent200)
-  $sayings300.on('click', sayingsContent300)
-  $sayings400.on('click', sayingsContent400)
-  $sayings500.on('click', sayingsContent500)
+  $authors300.on('click', () => {
+    $authors300.css('background-color', '#FF91D2');
+    $authors300.css('color', 'black')
+    $authors300.off('click')
+    authorContent300()
+  })
+
+  $authors400.on('click', () => {
+    $authors400.css('background-color', '#FF91D2');
+    $authors400.css('color', 'black')
+    $authors400.off('click')
+    authorContent400()
+  })
+
+  $authors500.on('click', () => {
+    $authors500.css('background-color', '#FF91D2');
+    $authors500.css('color', 'black')
+    $authors500.off('click')
+    authorContent500()
+  })
+
+  $items100.on('click', () => {
+    $items100.css('background-color', '#FF91D2');
+    $items100.css('color', 'black')
+    $items100.off('click')
+    itemContent100()
+  })
+
+  $items200.on('click', () => {
+    $items200.css('background-color', '#FF91D2');
+    $items200.css('color', 'black')
+    $items200.off('click')
+    itemContent200()
+  })
+
+  $items300.on('click', () => {
+    $items300.css('background-color', '#FF91D2');
+    $items300.css('color','black')
+    $items300.off('click')
+    itemContent300()
+  })
+
+  $items400.on('click', () => {
+    $items400.css('background-color', '#FF91D2');
+    $items400.css('color', 'black')
+    $items400.off('click')
+    itemContent400()
+  })
+
+  $items500.on('click', () => {
+    $items500.css('background-color', '#FF91D2');
+    $items500.css('color', 'black')
+    $items500.off('click')
+    itemContent500()
+  })
+
+  $music100.on('click', () => {
+    $music100.css('background-color', '#FF91D2');
+    $music100.css('color', 'black')
+    $music100.off('click')
+    musicContent100()
+  })
+
+  $music200.on('click', () => {
+    $music200.css('background-color', '#FF91D2');
+    $music200.css('color', 'black')
+    $music200.off('click')
+    musicContent200()
+  })
+
+  $music300.on('click', () => {
+    $music300.css('background-color', '#FF91D2');
+    $music300.css('color', 'black')
+    $music300.off('click')
+    musicContent300()
+  })
+
+  $music400.on('click', () => {
+    $music400.css('background-color', '#FF91D2');
+    $music400.css('color', 'black')
+    $music400.off('click')
+    musicContent400()
+  })
+
+  $music500.on('click', () => {
+    $music500.css('background-color', '#FF91D2');
+    $music500.css('color', 'black')
+    $music500.off('click')
+    musicContent500()
+  })
+
+  $sayings100.on('click', () => {
+    $sayings100.css('background-color', '#FF91D2');
+    $sayings100.css('color', 'black')
+    $sayings100.off('click')
+    sayingsContent100()
+  })
+
+  $sayings200.on('click', () => {
+    $sayings200.css('background-color', '#FF91D2');
+    $sayings200.css('color', 'black')
+    $sayings200.off('click')
+    sayingsContent200()
+  })
+
+  $sayings300.on('click', () => {
+    $sayings300.css('background-color', '#FF91D2');
+    $sayings300.css('color', 'black')
+    $sayings300.off('click')
+    sayingsContent300()
+  })
+
+  $sayings400.on('click', () => {
+    $sayings400.css('background-color', '#FF91D2');
+    $sayings400.css('color', 'black')
+    $sayings400.off('click')
+    sayingsContent400()
+  })
+
+
+  $sayings500.on('click', () => {
+    $sayings400.css('background-color', '#FF91D2');
+    $sayings400.css('color', 'black')
+    $sayings400.off('click')
+    sayingsContent500()
+  })
 
   // Add a class specifically for that category
   // Add the text that will be displayed in that category
