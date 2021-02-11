@@ -104,19 +104,21 @@ $(() => {
 
       $films100.append($div)
 
-      let answer = true;
 
+      // add click event for buttons to spark an alert on correct answer
+      // select element that will be affected when clicked
 
-      // add click event for buttons to change color on correct answer
-      // select element that will affected when clicked
       $('.answer-button').on('click', (e) => {
-    // checking to see what element is selected when the event occurs
+    // checking to see what element and text is selected when the event occurs
         console.log($(e.currentTarget).text())
-        //create a conditional that takes clicked element and compares it to the 
+        //create a conditional that takes current target and compares it to the string of the correct answer
         if ( $(e.currentTarget).text() == 'The Wiz') {
+          // sets an alert informing user answer is correct
           alert('The Wiz is the correct answer! You\'ve earned $100!')
-          // change color of right answer
-          $inputAnswerC.css('border', '#0D4C34')
+          // grabbing the score element and the value of the class element 
+          // add the value of the score to the class holding the number
+          $score.text(parseInt($score.text()) + $('#score-answer').text())
+          
         } else {
           alert('Sorry, that\'s the wrong answer.')
         }
