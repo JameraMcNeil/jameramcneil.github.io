@@ -419,127 +419,164 @@ $(() => {
   }
 
   const itemContent100 = () => {
-    $items100.css('background-color', '#FF91D2');
-    $items100.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('These items are often found together beneath the kitchen sink. What are: ')
+    $div.html('<p>These items are often found together beneath the kitchen sink. What are: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('treats')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>doggie treats </p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('bags')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>plastic bags</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('cleaning')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>cleaning supplies</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('wires')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>wires</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $items100.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'plastic bags') {
+        alert('Plastic bags is the correct answer! You\'ve earned $100!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })  
+
   }
+
   const itemContent200 = () => {
-    $items200.css('background-color', '#FF91D2');
-    $items200.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This container lives in the fridge, but doesn\'t contain it\'s original contents. What is: ')
+    $div.html('<p>This container lives in the fridge, but doesn\'t contain it\'s original contents. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('egg-carton')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>egg carton</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('bottle')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>orange juice bottle</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('foil')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>aluminum foil</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('country-crock')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Country Crock</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $items200.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Country Crock') {
+        alert('Country Crock is the correct answer! You\'ve earned $200!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const itemContent300 = () => {
-    $items300.css('background-color', '#FF91D2');
-    $items300.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('The photo of this historical Black figure is somwehere in your grandparent\'s home. What is: ')
+    $div.html('<p>The photo of this historical Black figure is somwehere in your grandparent\'s home. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('barack-obama')
-    $inputAnswerA.html('<p>Photo of Barack Obama </p>')
+    $inputAnswerA.addClass('answer-button')
+    $inputAnswerA.html('<p>Photo of Barack Obama</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('good-times')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Photo of cast from Good Times</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('denzel')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Photo of Denzel Washinton</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('michelle-obama')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Photo of Michelle Obama</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $items300.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Photo of Barack Obama') {
+        alert('Photo of Barack Obama is the correct answer! You\'ve earned $300!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const itemContent400 = () => {
-    $items400.css('background-color', '#FF91D2');
-    $items400.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('An item that preserves the quality of your grand mother\'s furniture. What is: ')
+    $div.html('<p>An item that preserves the quality of your grand mother\'s furniture. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('spray')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Fabric Spray </p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('furniture-cleaning')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Furniture Cleaning</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('couch-cover')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Couch Cover</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('plastic-wrap')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Plastic Wrap</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $items400.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Plastic Wrap') {
+        alert('\'Plastic Wrap\' is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const itemContent500 = () => {
-    $items500.css('background-color', '#FF91D2');
-    $items500.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
     $div.text('A 5 gallon jug is usually full of this: What is:  ')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('water')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Water</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('change')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Change</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('candy')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Candy</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('fish')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Fish</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $items500.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Change') {
+        alert('\'Change\' is the correct answer! You\'ve earned $500!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
+
   }
 
   const musicContent100 = () => {
