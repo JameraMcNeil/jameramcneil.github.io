@@ -129,7 +129,7 @@ $(() => {
   const filmContent200 =() => {
       const $div = $('<div>');
       $div.addClass('zoom')
-      $div.html('<p>This film was adapted from Terry McMillan\'s novel about for friends. What is: </p>')
+      $div.html('<p>This film was adapted from Terry McMillan\'s novel about four friends. What is: </p>')
       const $inputAnswerA = $('<button>')
       $inputAnswerA.addClass('answer-button')
       $inputAnswerA.html('<p>Sex and the City</p>')
@@ -195,7 +195,7 @@ $(() => {
   const filmContent400 = () => {
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This 1980\'s film follows a young price from a wealthy African country looking for love. What is:  ')
+    $div.text('This 1980\'s film follows a young prince from a wealthy African country looking for love. What is:  ')
     const $inputAnswerA = $('<button>')
     $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Prince and Me</p>')
