@@ -117,7 +117,7 @@ $(() => {
           alert('The Wiz is the correct answer! You\'ve earned $100!')
           // grabbing the score element and the value of the class element 
           // add the value of the score to the class holding the number
-          $score.text(parseInt($score.text()) + $('#score-answer').text())
+          $score.text(parseInt($score.text()) + $(`<td>:contains('$100')`).text())
           
         } else {
           alert('Sorry, that\'s the wrong answer.')
