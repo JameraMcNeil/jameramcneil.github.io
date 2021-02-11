@@ -741,133 +741,168 @@ $(() => {
   }
 
   const sayingsContent100 = () => {
-    $sayings100.css('background-color', '#FF91D2');
-    $sayings100.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('A two-word dismissal. What is: ')
+    $div.html('<p>A two-word dismissal. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('bye')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>\'Bye, Felicia\'</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('get-gone')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'Get Gone!\'</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('girl-bye')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'Girl Bye!\'</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('enough')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>\'That\'s enough!\'</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $sayings100.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'Bye, Felicia\'') {
+        alert('\'Bye, Felicia\' is the correct answer! You\'ve earned $100!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const sayingsContent200 = () => {
-    $sayings200.css('background-color', '#FF91D2');
-    $sayings200.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('When you\'re a Native New Yorker and the temperature is low. What is: ')
+    $div.html('<p>When you\'re a Native New Yorker and the temperature is low. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('omg')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>\'Omg, I\'m freezing!\'</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('cold')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'It\'s cold as hell\'</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('brick')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'It\'s brick outside\'</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('turn-up')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>\'Someone turn up the heat!\'</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $sayings200.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'It\'s brick outside\'') {
+        alert('\'It\'s brick outside\' is the correct answer! You\'ve earned $200!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const sayingsContent300 = () => {
-    $sayings300.css('background-color', '#FF91D2');
-    $sayings300.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('What your mama said she\'d give you when you\'re crying: What is: ')
+    $div.html('<p>What your mama said she\'d give you when you\'re crying: What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('a-treat')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>a treat</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('cry')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'something to cry about \'</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('pop')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'a pop on the butt\'</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('hug')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>a hug</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $sayings300.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'something to cry about \'') {
+        alert('\'something to cry about \' is the correct answer! You\'ve earned $300!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const sayingsContent400 = () => {
-    $sayings400.css('background-color', '#FF91D2');
-    $sayings400.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('When your apperance is unsatisfactory. What is: ')
+    $div.html('<p>When your apperance is unsatisfactory. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('messy')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>\'You look a mess.\'</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('hurt')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'You look hurt. \'</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('john')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'You look like who shot john\'</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('wearing')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>\'That\'s what you\'re wearing?\'</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $sayings400.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'You look like who shot john\'') {
+        alert('\'You look like who shot john\' is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const sayingsContent500 = () => {
-    $sayings500.css('background-color', '#FF91D2');
-    $sayings500.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('A response to a request for McDonalds. What is: a) \'I could go for a fry\' b) \'We\'re eating at home\' c) \'You got McDonald\'s money?\' d) \'Sure!\' ')
+    $div.html('<p>A response to a request for McDonalds. What is:  </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('yum-fries')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>\'I could go for a fry\'</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('home-meal')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'We\'re eating at home\'</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('mickie-dees')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'You got McDonald\'s money?\'</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('all-yes')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>\'Sure!\'</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $sayings500.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'You got McDonald\'s money?\'') {
+        alert('\'You got McDonald\'s money?\' is the correct answer! You\'ve earned $500!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   // Add event listeners to each category
-  // Found that everytime I clicked the clicke event it would duplicate it so
-  // I separated the click event from 
+  // Found that everytime I clicked the clicked event it would duplicate it so
+  // I separated the click first event from the event handlers
 
   $films100.on('click', () => {
     $films100.css('background-color', '#FF91D2');
