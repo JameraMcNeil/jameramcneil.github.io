@@ -128,18 +128,18 @@ $(() => {
   const filmContent200 =() => {
       const $div = $('<div>');
       $div.addClass('zoom')
-      $div.text('This film was adapted from Terry McMillan\'s novel about for friends. What is: ')
+      $div.html('<p>This film was adapted from Terry McMillan\'s novel about for friends. What is: </p>')
       const $inputAnswerA = $('<button>')
-      $inputAnswerA.addClass('SATC')
+      $inputAnswerA.addClass('answer-button')
       $inputAnswerA.html('<p>Sex and the City</p>')
       const $inputAnswerB = $('<button>')
-      $inputAnswerB.addClass('WTE')
+      $inputAnswerB.addClass('answer-button')
       $inputAnswerB.html('<p>Waiting to Exhale</p>')
       const $inputAnswerC = $('<button>')
-      $inputAnswerC.addClass('the-score')
+      $inputAnswerC.addClass('answer-button')
       $inputAnswerC.html('<p>The Score</p>')
       const $inputAnswerD = $ ('<button>')
-      $inputAnswerD.addClass('Stella')
+      $inputAnswerD.addClass('answer-button')
       $inputAnswerD.html('<p>How Stella Got Her Groove Back</p>')
       $div.append($inputAnswerA)
       $div.append($inputAnswerB)
@@ -148,25 +148,31 @@ $(() => {
 
 
       $films200.append($div)
+
+      $('.answer-button').on('click', (e) => {
+        if ($(e.currentTarget).text() == 'Waiting to Exhale') {
+          alert('Waiting to Exhale is the correct answer! You\'ve earned $200!')
+        } else {
+          alert('Sorry, that\'s the wrong answer.')
+        }
+      })
   }
 
   const filmContent300 = () => {
-    $films300.css('background-color','#FF91D2');
-    $films300.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This 2002 film follows two childhood friends as they bond over career, love, and Hip Hop. What is:  ')
+    $div.html('<p>This 2002 film follows two childhood friends as they bond over career, love, and Hip Hop. What is:  </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('BrwnSugar')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Brown Sugar</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('LoveJones')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Love Jones</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('Wood')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>The Wood</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('honey')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Honey</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
@@ -174,25 +180,32 @@ $(() => {
     $div.append($inputAnswerD)
 
     $films300.append($div)
+
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Brown Sugar') {
+        alert('Brown Sugar is the correct answer! You\'ve earned $300!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
   }
 
   const filmContent400 = () => {
-    $films400.css('background-color','#FF91D2');
-    $films400.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
     $div.text('This 1980\'s film follows a young price from a wealthy African country looking for love. What is:  ')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('prince-me')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Prince and Me</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('p-diaries')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Princess Diaries</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('CTA')
-    $inputAnswerC.html('<p>Coming to America/p>')
+    $inputAnswerC.addClass('answer-button')
+    $inputAnswerC.html('<p>Coming to America</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('shrek')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Shrek</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
@@ -200,25 +213,33 @@ $(() => {
     $div.append($inputAnswerD)
     
     $films400.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Coming to America') {
+        alert('Coming to America is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
+
   }
 
   const filmContent500 = () => {
-    $films500.css('background-color','#FF91D2');
-    $films500.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('In this film, Furious Styles educates a group of young men about the dangers of decreasing property values in the Black community and its correlation to gentrification. What is: ')
+    $div.html('In this film, Furious Styles educates a group of young men about the dangers of decreasing property values in the Black community and its correlation to gentrification. What is: ')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('friday')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Friday</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('menace')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Menace II Society</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('higher')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Higher Learning</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('Boyz')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Boyz N the Hood</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
@@ -226,6 +247,16 @@ $(() => {
     $div.append($inputAnswerD)
 
     $films500.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Boyz N the Hood') {
+        alert('Boyz N the Hood is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
+
   }
 
   const authorContent100 = () => {
@@ -728,22 +759,22 @@ $(() => {
   }
 
   // Add event listeners to each category
-  // Found that everytime I clicked the
+  // Found that everytime I clicked the clicke event it would duplicate it so
+  // I separated the click event from 
+
   $films100.on('click', () => {
     $films100.css('background-color', '#FF91D2');
     $films100.css('color', 'black')
     $films100.off('click')
-    // e.preventDefault();
-    // $(e.currentTarget).trigger('reset');
     filmContent100()
   })
 
 
   $films200.on('click', () => {
-  $films200.css('background-color', '#FF91D2');
-  $films200.css('color', 'black')
-  $films200.off('click')
-  filmContent200()
+    $films200.css('background-color', '#FF91D2');
+    $films200.css('color', 'black')
+    $films200.off('click')
+    filmContent200()
 })
 
   $films300.on('click', () => {
