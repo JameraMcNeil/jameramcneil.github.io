@@ -1,17 +1,16 @@
-console.log('is this thing on?')
+// console.log('is this thing on?')
 
 $(() => {
 
     // As a user, I am able to select and deselect a modal to learn the directions of the game //
-    // setting up modal 
 
-     //Grabbing About the Game button
+    // setting up modal 
+    // Selecting modal elements that users will be interacting with
+
   const $openBtn = $('#openModal');
   
-  // Grabbing modal element
   const $modal = $('#modal');
 
-  //Grabbing close button
   const $closeBtn = $('#close');
 
       // Event Handlers //
@@ -29,7 +28,7 @@ $(() => {
 
     // Event Listeners //
 
-  // Add event listener on the About Game Button
+  // Add event listener on the Learn to Play button
   $openBtn.on('click', openModal);
 
   // Add event listener to Close button
@@ -39,7 +38,7 @@ $(() => {
 
   // As a user, I am able to choose an $dollar amount from any category ranging from $100-$500 under each category
 
-  // Grab each $$$ category and create a new jQuery variable
+  // Select  each $$$ category and create a new jQuery variable
   const $films100 = $('.films-100')
   const $films200 = $('.films-200')
   const $films300 = $('.films-300')
@@ -72,7 +71,9 @@ $(() => {
       
   }
 
-  // Add event handlers to films category
+  // Add event handlers for content within each category
+  // Create a new function that will contain question and answers
+  // Create a new div that adds the css zoom class to the function
 
   const filmContent100 = () => {
     //To help with structuring I added a paragraph to the new div that will have the question displayed inside the section when it's grabbed
@@ -81,9 +82,8 @@ $(() => {
       $div.html('<p>This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: </p>')
       // Maybe I can utitlize backticks to help structure this paragraph because it's all blending together//
       // $div.text('This 1978 film starred Diana Ross as a dog-loving Harlem school techer whisked away to another land. What is: ')
-      // created a button element for each answer 
-      //added a class to the button which groups teogether all of the 
-      // set an html element on the button of the answer itself so it's visible to user
+      // Create a button element for each answer 
+      //Add a class to the button which groups teogether all of the potential answers
       const $inputAnswerA = $('<button>')
       $inputAnswerA.addClass('answer-button')
       $inputAnswerA.attr('id','Mahogony')
@@ -101,7 +101,7 @@ $(() => {
       $div.append($inputAnswerB)
       $div.append($inputAnswerC)
       $div.append($inputAnswerD)
-
+    // append the div to the table data
       $films100.append($div)
 
 
@@ -110,7 +110,7 @@ $(() => {
 
       $('.answer-button').on('click', (e) => {
     // checking to see what element and text is selected when the event occurs
-        console.log($(e.currentTarget).text())
+        // console.log($(e.currentTarget).text())
         //create a conditional that takes current target and compares it to the string of the correct answer
         if ( $(e.currentTarget).text() == 'The Wiz') {
           // sets an alert informing user answer is correct
@@ -285,7 +285,7 @@ $(() => {
 
     $('.answer-button').on('click', (e) => {
       if ($(e.currentTarget).text() == 'Maya Angelou') {
-        alert('Maya Angelous is the correct answer! You\'ve earned $100!')
+        alert('Maya Angelou is the correct answer! You\'ve earned $100!')
       } else {
         alert('Sorry, that\'s the wrong answer.')
       }
@@ -336,7 +336,7 @@ $(() => {
     $inputAnswerB.html('<p>Richard Wright</p>')
     const $inputAnswerC = $('<button>')
     $inputAnswerC.addClass('answer-button')
-    $inputAnswerC.html('<p>Langston Hughes/p>')
+    $inputAnswerC.html('<p>Langston Hughes</p>')
     const $inputAnswerD = $ ('<button>')
     $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Lorraine Hansberry</p>')
@@ -903,8 +903,9 @@ $(() => {
   }
 
   // Add event listeners to each category
-  // Found that everytime I clicked the clicked event it would duplicate it so
+  // Found that everytime I clicked the clicked event it would duplicate the box so
   // I separated the click first event from the event handlers
+  // Then I added the off.click method to tell the code to stop the click right before it runs the function 
 
   $films100.on('click', () => {
     $films100.css('background-color', '#FF91D2');
@@ -1081,7 +1082,5 @@ $(() => {
     sayingsContent500()
   })
 
-  // Add a class specifically for that category
-  // Add the text that will be displayed in that category
-  // Append the class of the specified category to it's parent class
+  
 })
