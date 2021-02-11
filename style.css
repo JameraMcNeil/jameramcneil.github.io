@@ -59,6 +59,10 @@ footer {
     text-align: center;
 }
 
+a {
+	color: #DBA72D;
+}
+
 .zoom {
     padding: 20px;
     background-color: #FF91D2;
