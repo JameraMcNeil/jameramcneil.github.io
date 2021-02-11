@@ -65,11 +65,11 @@ $(() => {
   const $sayings400 = $('.sayings-400')
   const $sayings500 = $('.sayings-500')
 
-  const $score = $('.score')
+  // const $score = $('.score')
 
-  const scoreCount = () => {
+  // const scoreCount = () => {
       
-  }
+  // }
 
   // Add event handlers for content within each category
   // Create a new function that will contain question and answers
@@ -86,7 +86,6 @@ $(() => {
       //Add a class to the button which groups teogether all of the potential answers
       const $inputAnswerA = $('<button>')
       $inputAnswerA.addClass('answer-button')
-      $inputAnswerA.attr('id','Mahogony')
       $inputAnswerA.html('<p>Mahogony </p>')
       const $inputAnswerB = $('<button>')
       $inputAnswerB.addClass('answer-button')
@@ -117,7 +116,7 @@ $(() => {
           alert('The Wiz is the correct answer! You\'ve earned $100!')
           // grabbing the score element and the value of the class element 
           // add the value of the score to the class holding the number
-          $score.text(parseInt($score.text()) + $(`<td>:contains('$100')`).text())
+          // $score.text(parseInt($score.text()) + $(`<td>:contains('$100')`).text())
           
         } else {
           alert('Sorry, that\'s the wrong answer.')
