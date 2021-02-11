@@ -580,128 +580,164 @@ $(() => {
   }
 
   const musicContent100 = () => {
-    $music100.css('background-color', '#FF91D2');
-    $music100.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This American singer previsouly released music under their given name, but emerged in 2016 with a new mysterious persona. Who is: ')
+    $div.html('<p>This American singer previsouly released music under their given name, but emerged in 2016 with a new mysterious persona. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('solange')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Solange</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('her')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>H.E.R.</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('sza')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>SZA</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('lauryn-hill')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Lauryn Hill</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $music100.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'H.E.R.') {
+        alert('H.E.R. is the correct answer! You\'ve earned $100!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const musicContent200 = () => {
-    $music200.css('background-color', '#FF91D2');
-    $music200.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This musical competition began during the pandemic on Instagram. What is: ')
+    $div.html('<p>This musical competition began during the pandemic on Instagram. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('VOF')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Voices of Fire</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('american-idol')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>American Idol</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('verzuz')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Verzuz</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('AGT')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>America\'s Got Talent</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $music200.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Verzuz') {
+        alert('Verzuz is the correct answer! You\'ve earned $200!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
+
   }
 
   const musicContent300 = () => {
-    $music300.css('background-color', '#FF91D2');
-    $music300.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This song was dedicated to the years 1999 and 2000. What is: ')
+    $div.html('<p>This song was dedicated to the years 1999 and 2000. What is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('girlfriend')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>\'Girlfriend\' by Boy\'s World</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('lumidee')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>\'Uh-oh\' by Lumidee</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('aaliyah')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>\'Rock the Boat \' by Aaliyah</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('juvenile')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>\'Back That Thang Up\' by Juvenile</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $music300.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == '\'Back That Thang Up\' by Juvenile') {
+        alert('\'Back That Thang Up\' by Juvenile is the correct answer! You\'ve earned $300!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const musicContent400 = () => {
-    $music400.css('background-color', '#FF91D2');
-    $music400.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This musician is the Queen. Who is: ')
+    $div.html('<p>This musician is the Queen. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('kesha')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Ke$ha</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('taylor-swift')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Taylor Swift</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('adele')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Adele</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('bey')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Beyoncé Giselle Knowles-Carter</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $music400.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Beyoncé Giselle Knowles-Carter') {
+        alert('Beyoncé Giselle Knowles-Carter is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const musicContent500 = () => {
-    $music500.css('background-color', '#FF91D2');
-    $music500.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('Known as \'The Mother of the Blues,\' this singer bridged earlier vaudeville and the authentic expression of southern blues, influencing a generation of blues singers. Who is: ')
+    $div.html('<p>Known as \'The Mother of the Blues,\' this singer bridged earlier vaudeville and the authentic expression of southern blues, influencing a generation of blues singers. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('bessie')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Bessie Smith</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('ma-rainey')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Ma Rainey</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('madame')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Madam C. J. Walker</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('bogan')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Lucille Bogan</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $music500.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Ma Rainey') {
+        alert('Ma Rainey is the correct answer! You\'ve earned $500!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const sayingsContent100 = () => {
