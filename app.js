@@ -228,7 +228,7 @@ $(() => {
   const filmContent500 = () => {
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.html('In this film, Furious Styles educates a group of young men about the dangers of decreasing property values in the Black community and its correlation to gentrification. What is: ')
+    $div.html('<p>In this film, Furious Styles educates a group of young men about the dangers of decreasing property values in the Black community and its correlation to gentrification. What is: </p>')
     const $inputAnswerA = $('<button>')
     $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Friday</p>')
@@ -250,7 +250,7 @@ $(() => {
 
     $('.answer-button').on('click', (e) => {
       if ($(e.currentTarget).text() == 'Boyz N the Hood') {
-        alert('Boyz N the Hood is the correct answer! You\'ve earned $400!')
+        alert('Boyz N the Hood is the correct answer! You\'ve earned $500!')
       } else {
         alert('Sorry, that\'s the wrong answer.')
       }
@@ -260,128 +260,162 @@ $(() => {
   }
 
   const authorContent100 = () => {
-    $authors100.css('background-color', '#FF91D2');
-    $authors100.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This author, poet, and activist told us about their life in a book about a \'Caged Bird\'. Who is: ')
+    $div.html('<p>This author, poet, and activist told us about their life in a book about a \'Caged Bird\'. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('billy')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Billy D. Williams </p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('Maya')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Maya Angelou</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('gyasi')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Yaa Gyasi</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('oprah')
-    $inputAnswerD.html('<p>Ophrah Winfrey</p>')
+    $inputAnswerD.addClass('answer-button')
+    $inputAnswerD.html('<p>Oprah Winfrey</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $authors100.append($div)
 
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Maya Angelou') {
+        alert('Maya Angelous is the correct answer! You\'ve earned $100!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
+
   const authorContent200 = () => {
-    $authors200.css('background-color', '#FF91D2');
-    $authors200.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This American novelist won the 2011 National Book Award for their novel \'Salvage the Bones\'. Who is: ')
+    $div.html('<p>This American novelist won the 2011 National Book Award for their novel \'Salvage the Bones\'. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('britt')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Britt Bennett</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('Colson')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Colson Whitehead</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('jesmyn')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Jesmyn Ward</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('toni')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Toni Morrison</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $authors200.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Jesmyn Ward') {
+        alert('Jesmyn Ward is the correct answer! You\'ve earned $200!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
   }
 
   const authorContent300 = () => {
-    $authors300.css('background-color', '#FF91D2');
-    $authors300.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('This author\'s Harlem-based love story novel was adapted for the film in 2018 and starred newcomer Kiki Lane. Who is: ')
+    $div.html('<p>This author\'s Harlem-based love story novel was adapted for the film in 2018 and starred newcomer Kiki Lane. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('baldwin')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>James Baldwin</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('wright')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Richard Wright</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('hughes')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Langston Hughes/p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('hansberry')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Lorraine Hansberry</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $authors300.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'James Baldwin') {
+        alert('James Baldwin is the correct answer! You\'ve earned $300!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const authorContent400 = () => {
-    $authors400.css('background-color', '#FF91D2');
-    $authors400.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('In the late 1960\'s, this author became the first Black female editor in fiction at Random House in NYC. Who is: ')
+    $div.html('<p>In the late 1960\'s, this author became the first Black female editor in fiction at Random House in NYC. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('zora')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Zora Neale Hurston </p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('tmorrison')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Toni Morrison</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('walker')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Alice Walker</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('davis')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Angela Davis</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $authors400.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Toni Morrison') {
+        alert('Toni Morrison is the correct answer! You\'ve earned $400!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const authorContent500 = () => {
-    $authors500.css('background-color', '#FF91D2');
-    $authors500.css('color', 'black')
     const $div = $('<div>');
     $div.addClass('zoom')
-    $div.text('The New York Times best-selling essay collection \'Bad Feminist\' was helmed by this Nebraska-born writer. Who is: ')
+    $div.html('<p>The New York Times best-selling essay collection \'Bad Feminist\' was helmed by this Nebraska-born writer. Who is: </p>')
     const $inputAnswerA = $('<button>')
-    $inputAnswerA.addClass('rivera')
+    $inputAnswerA.addClass('answer-button')
     $inputAnswerA.html('<p>Gabby Rivera</p>')
     const $inputAnswerB = $('<button>')
-    $inputAnswerB.addClass('ford')
+    $inputAnswerB.addClass('answer-button')
     $inputAnswerB.html('<p>Ashley Ford</p>')
     const $inputAnswerC = $('<button>')
-    $inputAnswerC.addClass('jones')
+    $inputAnswerC.addClass('answer-button')
     $inputAnswerC.html('<p>Saeed Jones</p>')
     const $inputAnswerD = $ ('<button>')
-    $inputAnswerD.addClass('gay')
+    $inputAnswerD.addClass('answer-button')
     $inputAnswerD.html('<p>Roxane Gay</p>')
     $div.append($inputAnswerA)
     $div.append($inputAnswerB)
     $div.append($inputAnswerC)
     $div.append($inputAnswerD)
     $authors500.append($div)
+
+    $('.answer-button').on('click', (e) => {
+      if ($(e.currentTarget).text() == 'Roxane Gay') {
+        alert('Roxane Gay is the correct answer! You\'ve earned $500!')
+      } else {
+        alert('Sorry, that\'s the wrong answer.')
+      }
+    })
+
   }
 
   const itemContent100 = () => {
