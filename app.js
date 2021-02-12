@@ -1075,9 +1075,9 @@ $(() => {
 
 
   $sayings500.on('click', () => {
-    $sayings400.css('background-color', '#FF91D2');
-    $sayings400.css('color', 'black')
-    $sayings400.off('click')
+    $sayings500.css('background-color', '#FF91D2');
+    $sayings500.css('color', 'black')
+    $sayings500.off('click')
     sayingsContent500()
   })
 
