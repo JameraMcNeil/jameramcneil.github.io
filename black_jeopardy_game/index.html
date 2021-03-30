@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jeopardy!</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type = 'text/javascript' src = './app.js'></script>
+    <link rel= 'stylesheet' href = './style.css'></rel>
+</head>
+<body>
+    <h1>Black Jeopardy!</h1>
+    <button id = "openModal">Learn to Play</button>
+    <div id ="modal">
+        <div id = "modal-textbox">
+
+          <h1>Welcome to Black Jeopardy!</h1>
+
+            <p>Enjoy this special version of Jeopardy that quizzes players on the intricacies of Black culture.</p>
+
+            <p>Select a dollar amount within one of five categories that speaks to you. After reading the question that pops up, select your answer from the list of answers provided. </p>
+
+            <p>If the answer is correct, you earn that dollar amount and can move on to the next question. If the answer is incorrect, you will not recieve the money. You've won the game if you can answer all the questions correctly! </p>
+
+            <div id = "modal-footer">
+                <a id = "close" href = "#">Close</a>
+            </div>
+        </div>
+    </div>
+    <div id = board>
+        <table>
+            <tr>
+                <th class = 'categories'>Black Films</th>
+                <th class = 'categories'>Black Authors</th>
+                <th class = 'categories'>Items Found in a Black Home</th>
+                <th class = 'categories'>Black Music</th>
+                <th class = 'categories'>Popular Black Sayings</th>
+            </tr>
+            <tr>
+                <td class = 'films-100' id = 'score-answer'>$100</td>
+                <td class = 'authors-100'>$100</td>
+                <td class = 'items-100'>$100</td>
+                <td class = 'music-100'>$100</td>
+                <td class = 'sayings-100'>$100</td>
+            </tr>
+            <tr>
+                <td class = 'films-200'>$200</td>
+                <td class = 'authors-200'>$200</td>
+                <td class = 'items-200'>$200</td>
+                <td class = 'music-200'>$200</td>
+                <td class = 'sayings-200'>$200</td>
+            </tr>
+            <tr>
+                <td class = 'films-300'>$300</td>
+                <td class = 'authors-300'>$300</td>
+                <td class = 'items-300'>$300</td>
+                <td class = 'music-300'>$300</td>
+                <td class = 'sayings-300'>$300</td>
+            </tr>
+            <tr>
+                <td class = 'films-400'>$400</td>
+                <td class = 'authors-400'>$400</td>
+                <td class = 'items-400'>$400</td>
+                <td class = 'music-400'>$400</td>
+                <td class = 'sayings-400'>$400</td>
+            </tr>
+            <tr>
+                <td class = 'films-500'>$500</td>
+                <td class = 'authors-500'>$500</td>
+                <td class = 'items-500'>$500</td>
+                <td class = 'music-500'>$500</td>
+                <td class = 'sayings-500'>$500</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>Created by <a href='https://github.com/JameraMcNeil' target="_blank">Jamera McNeil</a>.</footer>
+</body>
+</html>
