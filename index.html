@@ -18,63 +18,77 @@
     </style>
 </head>
 <body>
-    <section class = 'section'>
+    <section class = 'section' style = 'padding-bottom: 0;'>
         <div class = 'container'>
-            <div>
+            <div class = 'media'>
                 <header>
-                    <h1 class = 'title'>Hi! My name is Jamera McNeil. Welcome to my portfolio!</h1>
-                    <img src = 'images/headshot.jpeg' alt = 'girl smiling at camera' style = 'width: 25%; height: 25%; border-radius: 50%;' />
-                    <p class = 'subtitle'>I'm a Software Engineer who is passionate about creating digital products that are accesible, inclusive, and enjoyable for all.</p>
+                    <h1 class = 'title'>Hi, I'm Jamera McNeil.</h1>
+                    <div class = 'columns is-multiline notification is-light'>
+                        <div class = 'column is-half' style = 'padding: 0px 0px 50px 40px;'>
+                            <figure class = 'media-right'>
+                                <figure class="image is-128x128">
+                                    <img src = 'images/headshot.jpeg' alt = 'girl smiling at camera' class = 'is-rounded'/>
+                                </figure>
+                            </figure>
+                        </div>
+                        <div class = 'column is-half' style = 'padding-top: 40px;'>
+                            <div class = 'media-content'>
+                                <div class = 'content'>
+                                    <p class = 'subtitle'>I'm a Software Engineer who is passionate about creating digital products that are accesible, inclusive, and enjoyable for all.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </header>
             </div>
         </div>
     </section>
-    <section class = 'section'>
+    <section class = 'section' style = 'padding-top: 0;'>
         <div class = 'container'>
             <section class = 'section'>
                 <div>
                     <h2 class = 'is-size-3'>Projects</h2>
                 </div>
             </section>
-            <div class = 'columns'>
-                <div class = 'notification'>
+            <div class = 'columns is-multiline'>
+                <div class = 'column is-half'>
                     <figure class = 'image is-50%'>
                         <img src = 'images/black-jeopardy.jpg' alt='mockup of website'  />
                     </figure>
                     <p class = 'is-size-5'>Black Jeopardy is a browser-based game that quizzes users on topics related to Black culture. <br/> Languages: Javascript, CSS and jQuery.</p>
-                    <button class = 'button'><a href = 'https://jameramcneil.github.io/black_jeopardy_game/' target = '_blank'>View Site</a></button>
-                    <button class = 'button'><a href = 'https://github.com/JameraMcNeil/jameramcneil.github.io/tree/master/black_jeopardy_game' target = '_blank'>Code</a></button>
+                    <button class = 'button is-light'><a href = 'https://jameramcneil.github.io/black_jeopardy_game/' target = '_blank' >View Site</a></button>
+                    <button class = 'button is-light'><a href = 'https://github.com/JameraMcNeil/jameramcneil.github.io/tree/master/black_jeopardy_game' target = '_blank' >Code</a></button>
                 </div>
                 <br/>
-                <div class = 'notification'>
+                <div class = 'column is-half'>
                     <img src = 'images/visibly-plus.jpg' alt = 'mockup of website' />
         
                     <p class = 'is-size-5'>Visibily+ is a full CRUD app for plus-size folks that showcases brands that sell clothing in extended sizes. <br/> Languages: Node.js, Expres.js, MongoDB, Mongoose, and EJS</p>
-                    <button class = 'button'><a href = 'https://mighty-mesa-49376.herokuapp.com/shops' target = '_blank'>View Site</a></button>
-                    <button class = 'button'><a href = 'https://github.com/JameraMcNeil/visibly-plus' target = '_blank'>Code</a></button>
+                    <button class = 'button is-light'><a href = 'https://mighty-mesa-49376.herokuapp.com/shops' target = '_blank'>View Site</a></button>
+                    <button class = 'button is-light'><a href = 'https://github.com/JameraMcNeil/visibly-plus' target = '_blank'>Code</a></button>
                 </div>
-                <div class = 'notification'>
+                <div class = 'column is-half'>
                     <img src = 'images/gather.jpg' alt = 'mockup of website' />
                     <p class = 'is-size-5'>Gather is an event-planning app that allows users to create and track different types of events. <br/> Languages: HTML5, CSS3, Javascript, and React.js. </p>
-                    <button class = 'button'><a href = 'https://mighty-savannah-40031.herokuapp.com/#/' target = '_blank'>View Site</a></button>
-                    <button class = 'button'><a href = 'https://github.com/mollycarroll/gather-front-end' target = '_blank'>Code</a></button>
+                    <button class = 'button is-light'><a href = 'https://mighty-savannah-40031.herokuapp.com/#/' target = '_blank'>View Site</a></button>
+                    <button class = 'button is-light'><a href = 'https://github.com/mollycarroll/gather-front-end' target = '_blank'>Code</a></button>
                 </div>
-                <div class = 'notification'>
+                <div class = 'column is-half'>
                     <img src = 'images/gather.jpg' alt = 'mockup of website' />
                     <p class = 'is-size-5'>Booksnob is a responsive web application that allows book-lovers to browse and add their favorite books. <br/> Languages: HTML5, CSS3, Javascript, and React.js</p>
-                    <button class = 'button'>View Site</button>
-                    <button class = 'button'>Code</button>
+                    <button class = 'button is-light'>View Site</button>
+                    <button class = 'button is-light'>Code</button>
                 </div>
             </div>
             <br/>
             <div>
-                <h3>Contact Me</h3>
+                <h3 class = 'is-size-3'>Contact Me</h3>
                 <p><a href = 'mailto:j.mcneil04@gmail.com'>Email</a> me for resume inquiries.</p>
                 <p>View my <a href = 'https://github.com/jameramcneil' target = '_blank'>Github</a> account.</p>
                 <p>Connect with me on <a href = 'https://www.linkedin.com/in/jameramcneil/LinkedIn' target = '_blank'>LinkedIn</a>.</p>
             </div>
             <br/>
-            <div>
+            <div class = 'center notification is-link is-light'>
                 <footer>
                     <p>&#169; Jamera McNeil 2021</p>
                 </footer>
